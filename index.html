@@ -5,284 +5,290 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Amman Traders | Sales & Service | Palani</title>
-
-<meta name="description" content="Amman Traders, Old Dharapuram Road, near Swami Theatre, Palani. Home appliances for sale and service.">
+<title>Amman Traders | Palani</title>
 
 <style>
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f8ff;
-    color: #172554;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f8ff;
+    color: #172b4d;
     line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(135deg, #073b78, #087bd8);
+    background: #0754a6;
     color: white;
     text-align: center;
-    padding: 35px 15px;
+    padding: 28px 15px;
 }
 
 header h1 {
-    font-size: clamp(30px, 5vw, 46px);
+    font-size: clamp(30px, 6vw, 45px);
     letter-spacing: 2px;
 }
 
 header p {
-    margin-top: 6px;
+    font-size: 16px;
+    margin-top: 5px;
 }
 
 nav {
     background: white;
-    padding: 14px 8px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0 3px 12px #00000012;
+    padding: 14px 8px;
+    box-shadow: 0 2px 8px #00000012;
 }
 
 nav a {
-    display: inline-block;
-    color: #0756a5;
-    font-weight: bold;
+    color: #0754a6;
     text-decoration: none;
-    margin: 5px 10px;
+    font-weight: bold;
+    margin: 0 12px;
+    display: inline-block;
 }
 
 nav a:hover {
-    color: #f59e0b;
+    color: #e67e22;
 }
 
 .hero {
-    background: linear-gradient(135deg, #dbeafe, #eff6ff);
     text-align: center;
-    padding: 65px 20px;
+    padding: 55px 20px;
+    background: linear-gradient(135deg, #e4f1ff, #ffffff);
 }
 
 .hero h2 {
-    color: #0756a5;
-    font-size: clamp(30px, 5vw, 45px);
-    line-height: 1.2;
-    margin-bottom: 18px;
+    font-size: clamp(26px, 5vw, 38px);
+    color: #0754a6;
+    margin-bottom: 12px;
 }
 
 .hero p {
     max-width: 650px;
-    margin: 0 auto 20px;
+    margin: 0 auto 22px;
+    font-size: 17px;
 }
 
 .button {
     display: inline-block;
-    background: #0756a5;
+    background: #0754a6;
     color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    padding: 12px 20px;
-    margin: 6px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
+    margin: 5px;
 }
 
 .button:hover {
-    background: #087bd8;
+    background: #003c7a;
 }
 
 section {
+    padding: 42px 18px;
     max-width: 1150px;
     margin: auto;
-    padding: 45px 20px;
 }
 
 .section-title {
     text-align: center;
-    color: #0756a5;
-    font-size: 32px;
+    color: #0754a6;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
-.section-subtitle {
+.section-description {
     text-align: center;
-    color: #64748b;
     margin-bottom: 28px;
+    color: #52647b;
 }
 
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
 }
 
 .product-card {
     background: white;
-    border: 1px solid #e2e8f0;
     border-radius: 13px;
-    padding: 24px 14px;
-    text-align: center;
-    box-shadow: 0 4px 14px #153a6810;
-    transition: transform 0.2s;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #163e6715;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .product-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px #163e6725;
 }
 
-.product-icon {
-    font-size: 42px;
-    margin-bottom: 8px;
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    background: #e5edf6;
 }
 
 .product-card h3 {
-    color: #0756a5;
-    font-size: 18px;
-    margin-bottom: 7px;
-}
-
-.product-card p {
-    color: #64748b;
-    font-size: 14px;
-}
-
-.sales-label {
-    display: inline-block;
-    background: #dcfce7;
-    color: #166534;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-    margin-top: 12px;
+    text-align: center;
+    padding: 16px 8px 18px;
+    color: #0754a6;
+    font-size: 19px;
 }
 
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
 }
 
 .info-card {
     background: white;
-    border-radius: 13px;
-    padding: 24px 16px;
-    text-align: center;
-    box-shadow: 0 4px 14px #153a6810;
-    overflow-wrap: anywhere;
-}
-
-.info-icon {
-    font-size: 34px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #163e6710;
 }
 
 .info-card h3 {
-    color: #0756a5;
-    margin: 8px 0;
+    color: #0754a6;
+    margin-bottom: 12px;
+    font-size: 21px;
 }
 
-.contact-box {
-    background: linear-gradient(135deg, #073b78, #087bd8);
-    color: white;
-    padding: 32px 18px;
-    border-radius: 15px;
-    text-align: center;
+.info-card p {
+    margin: 8px 0;
     overflow-wrap: anywhere;
 }
 
-.contact-box h3 {
-    font-size: 25px;
-    margin-bottom: 12px;
-}
-
-.contact-box p {
-    margin: 8px 0;
-}
-
-.contact-box .button {
-    background: white;
-    color: #0756a5;
-}
-
-.rating-box {
-    max-width: 650px;
-    margin: auto;
-    padding: 28px 18px;
-    border-radius: 15px;
-    background: white;
-    box-shadow: 0 4px 14px #153a6810;
+.holiday {
+    margin-top: 16px;
+    padding: 13px;
+    border-radius: 8px;
     text-align: center;
+    background: #ffe8e8;
+    color: #b00020;
+    border: 2px solid #d92d3a;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.contact-buttons {
+    margin-top: 15px;
+}
+
+.rating-card {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #163e6710;
 }
 
 .stars {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin: 16px 0;
+    font-size: 36px;
+    margin: 15px 0;
 }
 
-.star {
-    font-size: 40px;
-    color: #cbd5e1;
+.stars button {
     border: none;
     background: transparent;
+    font-size: 36px;
+    color: #c6cbd3;
     cursor: pointer;
 }
 
-.star.selected {
-    color: #f59e0b;
+.stars button.selected {
+    color: #ffb400;
 }
 
-.rating-box input,
-.rating-box textarea {
-    display: block;
+input, textarea {
     width: 100%;
     padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccd7e5;
+    border-radius: 7px;
     font: inherit;
 }
 
-.rating-box textarea {
-    min-height: 80px;
+textarea {
     resize: vertical;
+    min-height: 90px;
 }
 
-#rating-message {
+.submit-button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#ratingMessage {
     margin-top: 12px;
-    color: #0756a5;
+    color: #0754a6;
+    font-weight: bold;
+}
+
+.small-note {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 14px;
 }
 
 footer {
-    background: #062b55;
+    background: #06376b;
     color: white;
     text-align: center;
-    padding: 25px 15px;
+    padding: 24px 15px;
+    margin-top: 25px;
 }
 
 footer p {
     margin: 5px 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
+    .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+
+    .product-card h3 {
+        font-size: 16px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
     nav a {
+        margin: 5px 8px;
         font-size: 14px;
-        margin: 4px 6px;
+    }
+}
+
+@media (max-width: 400px) {
+    .products {
+        grid-template-columns: 1fr;
     }
 
-    section {
-        padding: 35px 15px;
-    }
-
-    .hero {
-        padding: 45px 16px;
+    .product-card img {
+        height: 230px;
     }
 }
 </style>
@@ -292,332 +298,287 @@ footer p {
 
 <header>
     <h1>AMMAN TRADERS</h1>
-    <p>HOME APPLIANCES | SALES &amp; SERVICE</p>
+    <p>Your Trusted Home Appliances Shop</p>
     <p>📍 Palani, Tamil Nadu</p>
 </header>
 
 <nav>
     <a href="#home">Home</a>
-    <a href="#products">Products for Sale</a>
+    <a href="#products">Products</a>
     <a href="#timings">Shop Timings</a>
     <a href="#contact">Contact</a>
-    <a href="#location">Location</a>
-    <a href="#reviews">Rate Us</a>
+    <a href="#rating">Rate Us</a>
 </nav>
-
-<!-- HOME -->
 
 <div class="hero" id="home">
     <h2>Welcome to Amman Traders</h2>
     <p>
-        Your local destination for home appliances in Palani.
-        Explore our product categories and contact us for sales
-        enquiries and appliance service.
+        Explore home appliances for your everyday needs.
+        Visit our shop in Palani for our available products.
     </p>
-
-    <a class="button" href="#products">View Our Products</a>
-
+    <a class="button" href="#products">Explore Products</a>
     <a class="button"
        href="https://wa.me/919944913454"
        target="_blank" rel="noopener">
-       WhatsApp Us
+       Contact on WhatsApp
     </a>
 </div>
 
-<!-- PRODUCTS FOR SALE -->
-
 <section id="products">
-    <h2 class="section-title">Our Products for Sale</h2>
-    <p class="section-subtitle">
-        Explore the home appliances available at Amman Traders.
-        Contact our shop to check current stock and details.
+    <h2 class="section-title">Our Products</h2>
+    <p class="section-description">
+        Quality home appliances available at Amman Traders.
     </p>
 
     <div class="products">
 
-        <div class="product-card">
-            <div class="product-icon">🥣</div>
-            <h3>Mixer Grinder</h3>
-            <p>Kitchen mixing and grinding appliances.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
+        <article class="product-card">
+            <img
+                src="https://loremflickr.com/800/600/pressure,cooker?lock=101"
+                alt="Pressure cooker"
+                loading="lazy">
+            <h3>Pressure Cooker</h3>
+        </article>
 
-        <div class="product-card">
-            <div class="product-icon">⚙️</div>
-            <h3>Grinder</h3>
-            <p>Grinding appliances for home use.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
+        <article class="product-card">
+            <img
+                src="https://loremflickr.com/800/600/rice,cooker?lock=102"
+                alt="Electric rice cooker"
+                loading="lazy">
+            <h3>Rice Cooker</h3>
+        </article>
 
-        <div class="product-card">
-            <div class="product-icon">🍲</div>
-            <h3>Cooker</h3>
-            <p>Cooking appliances for everyday use.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
+        <article class="product-card">
+            <img
+                src="https://loremflickr.com/800/600/induction,cooktop?lock=103"
+                alt="Induction cooktop"
+                loading="lazy">
+            <h3>Induction Stove</h3>
+        </article>
 
-        <div class="product-card">
-            <div class="product-icon">☕</div>
-            <h3>Electric Kettle</h3>
-            <p>Convenient water-heating appliances.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
+        <article class="product-card">
+            <img
+                src="https://loremflickr.com/800/600/electric,stove?lock=104"
+                alt="Electric stove"
+                loading="lazy">
+            <h3>Electric Stove</h3>
+        </article>
 
-        <div class="product-card">
-            <div class="product-icon">🫙</div>
-            <h3>Flask</h3>
-            <p>Flasks for keeping drinks hot or cold.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
-
-        <div class="product-card">
-            <div class="product-icon">🧴</div>
-            <h3>Water Bottle</h3>
-            <p>Bottles for everyday use.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
-
-        <div class="product-card">
-            <div class="product-icon">🔥</div>
+        <article class="product-card">
+            <img
+                src="https://loremflickr.com/800/600/gas,stove?lock=105"
+                alt="Gas stove"
+                loading="lazy">
             <h3>Gas Stove</h3>
-            <p>Cooking stoves for your kitchen.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
+        </article>
 
-        <div class="product-card">
-            <div class="product-icon">🍱</div>
-            <h3>Hot Box</h3>
-            <p>Containers for keeping food warm.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
+        <article class="product-card">
+            <img
+                src="https://loremflickr.com/800/600/mixer,grinder,appliance?lock=106"
+                alt="Mixer grinder"
+                loading="lazy">
+            <h3>Mixer Grinder (Mixie)</h3>
+        </article>
 
-        <div class="product-card">
-            <div class="product-icon">👔</div>
-            <h3>Iron Box</h3>
-            <p>Electric irons for clothes.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
+        <article class="product-card">
+            <img
+                src="https://loremflickr.com/800/600/wet,grinder,kitchen?lock=107"
+                alt="Wet grinder"
+                loading="lazy">
+            <h3>Wet Grinder</h3>
+        </article>
 
-        <div class="product-card">
-            <div class="product-icon">🌀</div>
+        <article class="product-card">
+            <img
+                src="https://loremflickr.com/800/600/electric,kettle?lock=108"
+                alt="Electric kettle"
+                loading="lazy">
+            <h3>Electric Kettle</h3>
+        </article>
+
+        <article class="product-card">
+            <img
+                src="https://loremflickr.com/800/600/ceiling,fan?lock=109"
+                alt="Ceiling fan"
+                loading="lazy">
             <h3>Ceiling Fan</h3>
-            <p>Fans for home and indoor spaces.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
-
-        <div class="product-card">
-            <div class="product-icon">💨</div>
-            <h3>Table Fan</h3>
-            <p>Portable fans for home and office.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
-
-        <div class="product-card">
-            <div class="product-icon">❄️</div>
-            <h3>Air Cooler</h3>
-            <p>Cooling appliances for your home.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
-
-        <div class="product-card">
-            <div class="product-icon">🔥</div>
-            <h3>Iron Stove</h3>
-            <p>Iron stoves for cooking needs.</p>
-            <span class="sales-label">FOR SALE</span>
-        </div>
+        </article>
 
     </div>
 </section>
 
-<!-- SHOP TIMINGS -->
-
 <section id="timings">
     <h2 class="section-title">Shop Timings</h2>
-    <p class="section-subtitle">
+    <p class="section-description">
         Plan your visit to Amman Traders.
     </p>
 
     <div class="info-grid">
-
         <div class="info-card">
-            <div class="info-icon">🕘</div>
-            <h3>Sunday – Friday</h3>
-            <p>9:00 AM – 10:00 PM</p>
-            <p style="color:green;font-weight:bold;">OPEN</p>
+            <h3>🕒 Opening Hours</h3>
+            <p><strong>Sunday:</strong> 9:00 AM – 10:00 PM</p>
+            <p><strong>Monday:</strong> 9:00 AM – 10:00 PM</p>
+            <p><strong>Tuesday:</strong> 9:00 AM – 10:00 PM</p>
+            <p><strong>Wednesday:</strong> 9:00 AM – 10:00 PM</p>
+            <p><strong>Thursday:</strong> 9:00 AM – 10:00 PM</p>
+            <p><strong>Friday:</strong> 9:00 AM – 10:00 PM</p>
+
+            <div class="holiday">
+                SATURDAY: WEEKLY HOLIDAY<br>
+                SHOP CLOSED
+            </div>
         </div>
 
-        <div class="info-card">
-            <div class="info-icon">📅</div>
-            <h3>Saturday</h3>
-            <p>Weekly Holiday</p>
-            <p style="color:#dc2626;font-weight:bold;">CLOSED</p>
-        </div>
+        <div class="info-card" id="contact">
+            <h3>📍 Contact & Location</h3>
+            <p><strong>Shop:</strong> Amman Traders</p>
+            <p><strong>Address:</strong> Old Dharapuram Road, near Swami Theatre, Palani, Tamil Nadu.</p>
+            <p><strong>Mobile:</strong> 9944913454</p>
 
+            <div class="contact-buttons">
+                <a class="button" href="tel:+919944913454">
+                    Call Us
+                </a>
+
+                <a class="button"
+                   href="https://wa.me/919944913454"
+                   target="_blank" rel="noopener">
+                    WhatsApp
+                </a>
+
+                <a class="button"
+                   href="https://www.google.com/maps/search/?api=1&query=Amman+Traders+Old+Dharapuram+Road+Palani+Tamil+Nadu"
+                   target="_blank" rel="noopener">
+                    Google Maps
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- CONTACT -->
-
-<section id="contact">
-    <h2 class="section-title">Contact Us</h2>
-    <p class="section-subtitle">
-        Contact us for product enquiries and service details.
+<section id="rating">
+    <h2 class="section-title">Rate Our Shop</h2>
+    <p class="section-description">
+        Share your experience with Amman Traders.
     </p>
 
-    <div class="contact-box">
-        <h3>AMMAN TRADERS</h3>
+    <div class="rating-card">
+        <h3>How would you rate us?</h3>
 
-        <p>📞 Mobile: 9944913454</p>
-        <p>💬 WhatsApp: 9944913454</p>
-        <p>📍 Old Dharapuram Road, near Swami Theatre, Palani</p>
-
-        <a class="button" href="tel:+919944913454">
-            Call Now
-        </a>
-
-        <a class="button"
-           href="https://wa.me/919944913454"
-           target="_blank" rel="noopener">
-            Chat on WhatsApp
-        </a>
-    </div>
-</section>
-
-<!-- LOCATION -->
-
-<section id="location">
-    <h2 class="section-title">Find Our Shop</h2>
-    <p class="section-subtitle">
-        Old Dharapuram Road, near Swami Theatre, Palani, Tamil Nadu.
-    </p>
-
-    <div class="contact-box">
-        <h3>Visit Amman Traders</h3>
-        <p>We look forward to welcoming you to our shop.</p>
-
-        <a class="button"
-           href="https://www.google.com/maps/search/?api=1&query=Old+Dharapuram+Road+near+Swami+Theatre+Palani+Tamil+Nadu"
-           target="_blank" rel="noopener">
-            Open Google Maps
-        </a>
-    </div>
-</section>
-
-<!-- CUSTOMER STAR RATING -->
-
-<section id="reviews">
-    <h2 class="section-title">Rate Your Experience</h2>
-    <p class="section-subtitle">
-        Share your experience at Amman Traders.
-    </p>
-
-    <div class="rating-box">
-        <h3>Select Your Star Rating</h3>
-
-        <div class="stars">
-            <button class="star" type="button" data-rating="1" aria-label="1 star">★</button>
-            <button class="star" type="button" data-rating="2" aria-label="2 stars">★</button>
-            <button class="star" type="button" data-rating="3" aria-label="3 stars">★</button>
-            <button class="star" type="button" data-rating="4" aria-label="4 stars">★</button>
-            <button class="star" type="button" data-rating="5" aria-label="5 stars">★</button>
+        <div class="stars" aria-label="Choose a star rating">
+            <button type="button" data-rating="1" aria-label="1 star">★</button>
+            <button type="button" data-rating="2" aria-label="2 stars">★</button>
+            <button type="button" data-rating="3" aria-label="3 stars">★</button>
+            <button type="button" data-rating="4" aria-label="4 stars">★</button>
+            <button type="button" data-rating="5" aria-label="5 stars">★</button>
         </div>
 
-        <p id="rating-label">Choose 1 to 5 stars.</p>
+        <form id="ratingForm">
+            <input
+                type="text"
+                id="reviewName"
+                placeholder="Your name (optional)"
+                maxlength="60">
 
-        <form id="rating-form">
             <textarea
-                id="customer-review"
-                placeholder="Write a review (optional)"
+                id="reviewText"
+                placeholder="Write your feedback (optional)"
                 maxlength="500"></textarea>
 
-            <button class="button" type="submit">
+            <button class="button submit-button" type="submit">
                 Submit Rating
             </button>
         </form>
 
-        <p id="rating-message" aria-live="polite"></p>
+        <p id="ratingMessage" aria-live="polite"></p>
 
-        <p style="font-size:12px;color:#64748b;margin-top:12px;">
-            Ratings in this version are saved only in the visitor's
-            browser. They are not sent to the shop.
+        <p class="small-note">
+            Note: This sample rating form saves ratings only in the
+            current browser. To receive customer ratings at the shop,
+            a shared database or review service must be connected.
         </p>
     </div>
 </section>
 
 <footer>
-    <h3>AMMAN TRADERS</h3>
-    <p>Home Appliances | Sales &amp; Service</p>
-    <p>Old Dharapuram Road, near Swami Theatre, Palani</p>
-    <p>Mobile &amp; WhatsApp: 9944913454</p>
-    <p>© 2026 Amman Traders. All rights reserved.</p>
+    <p><strong>AMMAN TRADERS</strong></p>
+    <p>Home Appliances Sales & Service</p>
+    <p>Old Dharapuram Road, near Swami Theatre, Palani, Tamil Nadu</p>
+    <p>📞 9944913454</p>
+    <p>© <span id="year"></span> Amman Traders. All rights reserved.</p>
 </footer>
 
 <script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
 let selectedRating = 0;
 
-const stars = document.querySelectorAll(".star");
-const ratingLabel = document.getElementById("rating-label");
-const ratingMessage = document.getElementById("rating-message");
-const ratingForm = document.getElementById("rating-form");
+const starButtons = document.querySelectorAll(".stars button");
+const ratingMessage = document.getElementById("ratingMessage");
 
-function updateStars(rating) {
-    stars.forEach(function(star) {
-        star.classList.toggle(
-            "selected",
-            Number(star.dataset.rating) <= rating
-        );
-    });
-}
+starButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        selectedRating = Number(button.dataset.rating);
 
-stars.forEach(function(star) {
-    star.addEventListener("click", function() {
-        selectedRating = Number(star.dataset.rating);
-        updateStars(selectedRating);
-        ratingLabel.textContent =
-            selectedRating + " out of 5 stars selected.";
+        starButtons.forEach(function(star) {
+            star.classList.toggle(
+                "selected",
+                Number(star.dataset.rating) <= selectedRating
+            );
+        });
+
+        ratingMessage.textContent =
+            "You selected " + selectedRating + " out of 5 stars.";
     });
 });
 
-ratingForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+document.getElementById("ratingForm").addEventListener(
+    "submit",
+    function(event) {
+        event.preventDefault();
 
-    if (selectedRating === 0) {
-        ratingMessage.textContent =
-            "Please select a star rating first.";
-        return;
+        if (selectedRating === 0) {
+            ratingMessage.textContent =
+                "Please select a star rating first.";
+            return;
+        }
+
+        const review = {
+            rating: selectedRating,
+            name: document.getElementById("reviewName").value.trim(),
+            feedback: document.getElementById("reviewText").value.trim(),
+            date: new Date().toISOString()
+        };
+
+        try {
+            const reviews = JSON.parse(
+                localStorage.getItem("ammanTradersReviews") || "[]"
+            );
+
+            reviews.push(review);
+
+            localStorage.setItem(
+                "ammanTradersReviews",
+                JSON.stringify(reviews)
+            );
+
+            ratingMessage.textContent =
+                "Thank you for rating Amman Traders!";
+
+            document.getElementById("ratingForm").reset();
+            selectedRating = 0;
+
+            starButtons.forEach(function(star) {
+                star.classList.remove("selected");
+            });
+
+        } catch (error) {
+            ratingMessage.textContent =
+                "Your rating could not be saved in this browser.";
+        }
     }
-
-    const review = {
-        rating: selectedRating,
-        comment: document.getElementById("customer-review").value.trim(),
-        date: new Date().toISOString()
-    };
-
-    try {
-        const saved = JSON.parse(
-            localStorage.getItem("ammanTradersReviews") || "[]"
-        );
-
-        saved.push(review);
-
-        localStorage.setItem(
-            "ammanTradersReviews",
-            JSON.stringify(saved)
-        );
-
-        ratingMessage.textContent =
-            "Thank you for rating Amman Traders!";
-
-        ratingForm.reset();
-        selectedRating = 0;
-        updateStars(0);
-        ratingLabel.textContent = "Choose 1 to 5 stars.";
-
-    } catch (error) {
-        ratingMessage.textContent =
-            "Unable to save the rating in this browser.";
-    }
-});
+);
 </script>
 
 </body>
