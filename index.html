@@ -5,31 +5,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Amman Traders | Home Appliances & Service | Palani</title>
+<title>Amman Traders | Sales & Service | Palani</title>
 
-<meta name="description"
-content="Amman Traders, Palani. Explore home appliances and contact us for sales and service enquiries.">
+<meta name="description" content="Amman Traders, Old Dharapuram Road, near Swami Theatre, Palani. Home appliances for sale and service.">
 
 <style>
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background: #f4f8ff;
     color: #172554;
     line-height: 1.6;
 }
 
 header {
-    background: #073b78;
+    background: linear-gradient(135deg, #073b78, #087bd8);
     color: white;
-    padding: 28px 15px;
     text-align: center;
+    padding: 35px 15px;
 }
 
 header h1 {
@@ -38,25 +37,24 @@ header h1 {
 }
 
 header p {
-    font-size: 16px;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 nav {
     background: white;
-    padding: 15px 8px;
+    padding: 14px 8px;
     text-align: center;
-    box-shadow: 0 3px 12px #00000012;
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 0 3px 12px #00000012;
 }
 
 nav a {
     display: inline-block;
     color: #0756a5;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
     margin: 5px 10px;
 }
 
@@ -65,38 +63,27 @@ nav a:hover {
 }
 
 .hero {
-    min-height: 390px;
-    padding: 65px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
     text-align: center;
-    color: white;
-    background:
-        linear-gradient(135deg, #073b78ee, #087bd8dd),
-        url("https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=85")
-        center/cover;
-}
-
-.hero-content {
-    max-width: 800px;
+    padding: 65px 20px;
 }
 
 .hero h2 {
-    font-size: clamp(32px, 5vw, 52px);
+    color: #0756a5;
+    font-size: clamp(30px, 5vw, 45px);
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 25px;
+    max-width: 650px;
+    margin: 0 auto 20px;
 }
 
 .button {
     display: inline-block;
-    background: #f59e0b;
-    color: #172554;
+    background: #0756a5;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 12px 20px;
@@ -104,18 +91,16 @@ nav a:hover {
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    transition: 0.2s;
 }
 
 .button:hover {
-    transform: translateY(-2px);
-    background: #fbbf24;
+    background: #087bd8;
 }
 
 section {
-    max-width: 1200px;
+    max-width: 1150px;
     margin: auto;
-    padding: 55px 20px;
+    padding: 45px 20px;
 }
 
 .section-title {
@@ -128,10 +113,57 @@ section {
 .section-subtitle {
     text-align: center;
     color: #64748b;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
-.shop-info {
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 18px;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 13px;
+    padding: 24px 14px;
+    text-align: center;
+    box-shadow: 0 4px 14px #153a6810;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+.product-icon {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.product-card h3 {
+    color: #0756a5;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.product-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.sales-label {
+    display: inline-block;
+    background: #dcfce7;
+    color: #166534;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 18px;
@@ -139,15 +171,15 @@ section {
 
 .info-card {
     background: white;
-    padding: 24px;
-    border-radius: 14px;
+    border-radius: 13px;
+    padding: 24px 16px;
     text-align: center;
-    box-shadow: 0 5px 18px #153a6810;
+    box-shadow: 0 4px 14px #153a6810;
     overflow-wrap: anywhere;
 }
 
-.info-card .icon {
-    font-size: 35px;
+.info-icon {
+    font-size: 34px;
 }
 
 .info-card h3 {
@@ -155,82 +187,36 @@ section {
     margin: 8px 0;
 }
 
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 22px;
-}
-
-.product-card {
-    background: white;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px #153a6815;
-    transition: 0.25s;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-}
-
-.product-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    background: #e2e8f0;
-}
-
-.product-info {
-    padding: 18px;
-    text-align: center;
-}
-
-.product-info h3 {
-    color: #0756a5;
-    margin-bottom: 7px;
-}
-
-.product-info p {
-    font-size: 14px;
-    color: #64748b;
-    margin-bottom: 10px;
-}
-
-.product-info .button {
-    font-size: 14px;
-}
-
 .contact-box {
     background: linear-gradient(135deg, #073b78, #087bd8);
     color: white;
-    padding: 35px 20px;
-    border-radius: 16px;
+    padding: 32px 18px;
+    border-radius: 15px;
     text-align: center;
+    overflow-wrap: anywhere;
 }
 
 .contact-box h3 {
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .contact-box p {
     margin: 8px 0;
-    overflow-wrap: anywhere;
 }
 
 .contact-box .button {
     background: white;
-    color: #073b78;
+    color: #0756a5;
 }
 
 .rating-box {
     max-width: 650px;
     margin: auto;
+    padding: 28px 18px;
+    border-radius: 15px;
     background: white;
-    padding: 30px 20px;
-    border-radius: 16px;
-    box-shadow: 0 5px 20px #153a6815;
+    box-shadow: 0 4px 14px #153a6810;
     text-align: center;
 }
 
@@ -238,45 +224,40 @@ section {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin: 18px 0;
+    margin: 16px 0;
 }
 
 .star {
-    border: none;
-    background: none;
     font-size: 40px;
     color: #cbd5e1;
+    border: none;
+    background: transparent;
     cursor: pointer;
 }
 
-.star.selected,
-.star:hover {
+.star.selected {
     color: #f59e0b;
 }
 
 .rating-box input,
 .rating-box textarea {
+    display: block;
     width: 100%;
     padding: 12px;
-    margin: 8px 0;
+    margin: 10px 0;
     border: 1px solid #cbd5e1;
     border-radius: 8px;
     font: inherit;
 }
 
 .rating-box textarea {
-    min-height: 90px;
+    min-height: 80px;
     resize: vertical;
 }
 
-.rating-message {
+#rating-message {
     margin-top: 12px;
     color: #0756a5;
-    overflow-wrap: anywhere;
-}
-
-.map-link {
-    margin-top: 12px;
 }
 
 footer {
@@ -292,21 +273,16 @@ footer p {
 
 @media (max-width: 600px) {
     nav a {
-        margin: 4px 6px;
         font-size: 14px;
-    }
-
-    .hero {
-        min-height: 340px;
-        padding: 45px 16px;
+        margin: 4px 6px;
     }
 
     section {
-        padding: 38px 15px;
+        padding: 35px 15px;
     }
 
-    .product-card img {
-        height: 190px;
+    .hero {
+        padding: 45px 16px;
     }
 }
 </style>
@@ -322,219 +298,188 @@ footer p {
 
 <nav>
     <a href="#home">Home</a>
-    <a href="#products">Products</a>
+    <a href="#products">Products for Sale</a>
+    <a href="#timings">Shop Timings</a>
     <a href="#contact">Contact</a>
     <a href="#location">Location</a>
     <a href="#reviews">Rate Us</a>
 </nav>
 
-<!-- HOME PAGE -->
+<!-- HOME -->
 
 <div class="hero" id="home">
-    <div class="hero-content">
-        <h2>Your Home Appliance Store in Palani</h2>
-
-        <p>
-            Discover home appliances and contact us for
-            product enquiries and repair services.
-        </p>
-
-        <a class="button" href="#products">Explore Products</a>
-
-        <a class="button"
-           href="https://wa.me/919944913454"
-           target="_blank" rel="noopener">
-            WhatsApp Us
-        </a>
-    </div>
-</div>
-
-<!-- SHOP DETAILS -->
-
-<section>
-    <h2 class="section-title">Visit Amman Traders</h2>
-
-    <p class="section-subtitle">
-        Your local destination for home appliance enquiries.
+    <h2>Welcome to Amman Traders</h2>
+    <p>
+        Your local destination for home appliances in Palani.
+        Explore our product categories and contact us for sales
+        enquiries and appliance service.
     </p>
 
-    <div class="shop-info">
+    <a class="button" href="#products">View Our Products</a>
 
-        <div class="info-card">
-            <div class="icon">📍</div>
-            <h3>Our Location</h3>
-            <p>Old Dharapuram Road, near Swami Theatre, Palani.</p>
-            <a class="button"
-               href="https://www.google.com/maps/search/?api=1&query=Old+Dharapuram+Road+near+Swami+Theatre+Palani+Tamil+Nadu"
-               target="_blank" rel="noopener">
-                Open Google Maps
-            </a>
-        </div>
+    <a class="button"
+       href="https://wa.me/919944913454"
+       target="_blank" rel="noopener">
+       WhatsApp Us
+    </a>
+</div>
 
-        <div class="info-card">
-            <div class="icon">📞</div>
-            <h3>Call Our Shop</h3>
-            <p>9944913454</p>
-            <a class="button" href="tel:+919944913454">
-                Call Now
-            </a>
-        </div>
-
-        <div class="info-card">
-            <div class="icon">💬</div>
-            <h3>WhatsApp</h3>
-            <p>Message us with your product enquiry.</p>
-            <a class="button"
-               href="https://wa.me/919944913454"
-               target="_blank" rel="noopener">
-                Chat on WhatsApp
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<!-- PRODUCTS -->
+<!-- PRODUCTS FOR SALE -->
 
 <section id="products">
-    <h2 class="section-title">Our Home Appliances</h2>
-
+    <h2 class="section-title">Our Products for Sale</h2>
     <p class="section-subtitle">
-        Explore our product categories. Contact us for availability and details.
+        Explore the home appliances available at Amman Traders.
+        Contact our shop to check current stock and details.
     </p>
 
     <div class="products">
 
         <div class="product-card">
-            <img
-              src="https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=700&q=80"
-              alt="Mixer grinder"
-              loading="lazy">
-            <div class="product-info">
-                <h3>Mixer Grinder</h3>
-                <p>Kitchen mixing and grinding appliances.</p>
-                <a class="button" href="https://wa.me/919944913454?text=Hello%20Amman%20Traders%2C%20I%20want%20to%20enquire%20about%20mixer%20grinders."
-                   target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
+            <div class="product-icon">🥣</div>
+            <h3>Mixer Grinder</h3>
+            <p>Kitchen mixing and grinding appliances.</p>
+            <span class="sales-label">FOR SALE</span>
         </div>
 
         <div class="product-card">
-            <img
-              src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80"
-              alt="Kitchen and cooking appliances"
-              loading="lazy">
-            <div class="product-info">
-                <h3>Gas Stove</h3>
-                <p>Cooking appliances for your kitchen.</p>
-                <a class="button" href="https://wa.me/919944913454?text=Hello%20Amman%20Traders%2C%20I%20want%20to%20enquire%20about%20gas%20stoves."
-                   target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
+            <div class="product-icon">⚙️</div>
+            <h3>Grinder</h3>
+            <p>Grinding appliances for home use.</p>
+            <span class="sales-label">FOR SALE</span>
         </div>
 
         <div class="product-card">
-            <img
-              src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?auto=format&fit=crop&w=700&q=80"
-              alt="Rice cooker and kitchen appliances"
-              loading="lazy">
-            <div class="product-info">
-                <h3>Rice Cooker</h3>
-                <p>Convenient cooking appliances.</p>
-                <a class="button" href="https://wa.me/919944913454?text=Hello%20Amman%20Traders%2C%20I%20want%20to%20enquire%20about%20rice%20cookers."
-                   target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
+            <div class="product-icon">🍲</div>
+            <h3>Cooker</h3>
+            <p>Cooking appliances for everyday use.</p>
+            <span class="sales-label">FOR SALE</span>
         </div>
 
         <div class="product-card">
-            <img
-              src="https://images.unsplash.com/photo-1608354580875-30bd4168b351?auto=format&fit=crop&w=700&q=80"
-              alt="Electric kettle"
-              loading="lazy">
-            <div class="product-info">
-                <h3>Electric Kettle</h3>
-                <p>Electric kettles for everyday use.</p>
-                <a class="button" href="https://wa.me/919944913454?text=Hello%20Amman%20Traders%2C%20I%20want%20to%20enquire%20about%20electric%20kettles."
-                   target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
+            <div class="product-icon">☕</div>
+            <h3>Electric Kettle</h3>
+            <p>Convenient water-heating appliances.</p>
+            <span class="sales-label">FOR SALE</span>
         </div>
 
         <div class="product-card">
-            <img
-              src="https://images.unsplash.com/photo-1584990347449-a4f1e9a3b2e1?auto=format&fit=crop&w=700&q=80"
-              alt="Pressure cooker"
-              loading="lazy">
-            <div class="product-info">
-                <h3>Pressure Cooker</h3>
-                <p>Kitchen cookware and cooking essentials.</p>
-                <a class="button" href="https://wa.me/919944913454?text=Hello%20Amman%20Traders%2C%20I%20want%20to%20enquire%20about%20pressure%20cookers."
-                   target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
+            <div class="product-icon">🫙</div>
+            <h3>Flask</h3>
+            <p>Flasks for keeping drinks hot or cold.</p>
+            <span class="sales-label">FOR SALE</span>
         </div>
 
         <div class="product-card">
-            <img
-              src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=700&q=80"
-              alt="Induction cooking appliance"
-              loading="lazy">
-            <div class="product-info">
-                <h3>Induction Stove</h3>
-                <p>Modern electric cooking appliances.</p>
-                <a class="button" href="https://wa.me/919944913454?text=Hello%20Amman%20Traders%2C%20I%20want%20to%20enquire%20about%20induction%20stoves."
-                   target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
+            <div class="product-icon">🧴</div>
+            <h3>Water Bottle</h3>
+            <p>Bottles for everyday use.</p>
+            <span class="sales-label">FOR SALE</span>
         </div>
 
         <div class="product-card">
-            <img
-              src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=700&q=80"
-              alt="Ceiling fan and home interior"
-              loading="lazy">
-            <div class="product-info">
-                <h3>Ceiling Fan</h3>
-                <p>Cooling appliances for your home.</p>
-                <a class="button" href="https://wa.me/919944913454?text=Hello%20Amman%20Traders%2C%20I%20want%20to%20enquire%20about%20ceiling%20fans."
-                   target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
+            <div class="product-icon">🔥</div>
+            <h3>Gas Stove</h3>
+            <p>Cooking stoves for your kitchen.</p>
+            <span class="sales-label">FOR SALE</span>
         </div>
 
         <div class="product-card">
-            <img
-              src="https://images.unsplash.com/photo-1618941716939-553df3c6c278?auto=format&fit=crop&w=700&q=80"
-              alt="Table fan"
-              loading="lazy">
-            <div class="product-info">
-                <h3>Table Fan</h3>
-                <p>Portable fans for home and office.</p>
-                <a class="button" href="https://wa.me/919944913454?text=Hello%20Amman%20Traders%2C%20I%20want%20to%20enquire%20about%20table%20fans."
-                   target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
+            <div class="product-icon">🍱</div>
+            <h3>Hot Box</h3>
+            <p>Containers for keeping food warm.</p>
+            <span class="sales-label">FOR SALE</span>
         </div>
 
         <div class="product-card">
-            <img
-              src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=700&q=80"
-              alt="Home laundry appliance"
-              loading="lazy">
-            <div class="product-info">
-                <h3>Home Appliances</h3>
-                <p>Ask us about other available appliances.</p>
-                <a class="button" href="https://wa.me/919944913454?text=Hello%20Amman%20Traders%2C%20please%20tell%20me%20about%20your%20available%20home%20appliances."
-                   target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
+            <div class="product-icon">👔</div>
+            <h3>Iron Box</h3>
+            <p>Electric irons for clothes.</p>
+            <span class="sales-label">FOR SALE</span>
         </div>
 
         <div class="product-card">
-            <img
-              src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=700&q=80"
-              alt="Kitchen appliances"
-              loading="lazy">
-            <div class="product-info">
-                <h3>Other Kitchen Appliances</h3>
-                <p>Contact us to ask about available products.</p>
-                <a class="button" href="https://wa.me/919944913454?text=Hello%20Amman%20Traders%2C%20please%20tell%20me%20about%20your%20other%20kitchen%20appliances."
-                   target="_blank" rel="noopener">Enquire on WhatsApp</a>
-            </div>
+            <div class="product-icon">🌀</div>
+            <h3>Ceiling Fan</h3>
+            <p>Fans for home and indoor spaces.</p>
+            <span class="sales-label">FOR SALE</span>
         </div>
 
+        <div class="product-card">
+            <div class="product-icon">💨</div>
+            <h3>Table Fan</h3>
+            <p>Portable fans for home and office.</p>
+            <span class="sales-label">FOR SALE</span>
+        </div>
+
+        <div class="product-card">
+            <div class="product-icon">❄️</div>
+            <h3>Air Cooler</h3>
+            <p>Cooling appliances for your home.</p>
+            <span class="sales-label">FOR SALE</span>
+        </div>
+
+        <div class="product-card">
+            <div class="product-icon">🔥</div>
+            <h3>Iron Stove</h3>
+            <p>Iron stoves for cooking needs.</p>
+            <span class="sales-label">FOR SALE</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- SHOP TIMINGS -->
+
+<section id="timings">
+    <h2 class="section-title">Shop Timings</h2>
+    <p class="section-subtitle">
+        Plan your visit to Amman Traders.
+    </p>
+
+    <div class="info-grid">
+
+        <div class="info-card">
+            <div class="info-icon">🕘</div>
+            <h3>Sunday – Friday</h3>
+            <p>9:00 AM – 10:00 PM</p>
+            <p style="color:green;font-weight:bold;">OPEN</p>
+        </div>
+
+        <div class="info-card">
+            <div class="info-icon">📅</div>
+            <h3>Saturday</h3>
+            <p>Weekly Holiday</p>
+            <p style="color:#dc2626;font-weight:bold;">CLOSED</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle">
+        Contact us for product enquiries and service details.
+    </p>
+
+    <div class="contact-box">
+        <h3>AMMAN TRADERS</h3>
+
+        <p>📞 Mobile: 9944913454</p>
+        <p>💬 WhatsApp: 9944913454</p>
+        <p>📍 Old Dharapuram Road, near Swami Theatre, Palani</p>
+
+        <a class="button" href="tel:+919944913454">
+            Call Now
+        </a>
+
+        <a class="button"
+           href="https://wa.me/919944913454"
+           target="_blank" rel="noopener">
+            Chat on WhatsApp
+        </a>
     </div>
 </section>
 
@@ -542,15 +487,13 @@ footer p {
 
 <section id="location">
     <h2 class="section-title">Find Our Shop</h2>
-
     <p class="section-subtitle">
         Old Dharapuram Road, near Swami Theatre, Palani, Tamil Nadu.
     </p>
 
     <div class="contact-box">
         <h3>Visit Amman Traders</h3>
-        <p>📍 Old Dharapuram Road, near Swami Theatre, Palani</p>
-        <p>📞 9944913454</p>
+        <p>We look forward to welcoming you to our shop.</p>
 
         <a class="button"
            href="https://www.google.com/maps/search/?api=1&query=Old+Dharapuram+Road+near+Swami+Theatre+Palani+Tamil+Nadu"
@@ -560,19 +503,18 @@ footer p {
     </div>
 </section>
 
-<!-- CUSTOMER RATINGS -->
+<!-- CUSTOMER STAR RATING -->
 
 <section id="reviews">
     <h2 class="section-title">Rate Your Experience</h2>
-
     <p class="section-subtitle">
-        Visited Amman Traders? Tell us how your experience was.
+        Share your experience at Amman Traders.
     </p>
 
     <div class="rating-box">
-        <h3>How many stars would you give us?</h3>
+        <h3>Select Your Star Rating</h3>
 
-        <div class="stars" aria-label="Choose a rating from one to five stars">
+        <div class="stars">
             <button class="star" type="button" data-rating="1" aria-label="1 star">★</button>
             <button class="star" type="button" data-rating="2" aria-label="2 stars">★</button>
             <button class="star" type="button" data-rating="3" aria-label="3 stars">★</button>
@@ -580,18 +522,12 @@ footer p {
             <button class="star" type="button" data-rating="5" aria-label="5 stars">★</button>
         </div>
 
-        <p id="rating-label">Select your rating.</p>
+        <p id="rating-label">Choose 1 to 5 stars.</p>
 
         <form id="rating-form">
-            <input
-                type="text"
-                id="customer-name"
-                placeholder="Your name (optional)"
-                maxlength="60">
-
             <textarea
                 id="customer-review"
-                placeholder="Write a comment (optional)"
+                placeholder="Write a review (optional)"
                 maxlength="500"></textarea>
 
             <button class="button" type="submit">
@@ -599,11 +535,11 @@ footer p {
             </button>
         </form>
 
-        <p class="rating-message" id="rating-message" aria-live="polite"></p>
+        <p id="rating-message" aria-live="polite"></p>
 
-        <p style="font-size:13px;color:#64748b;margin-top:15px;">
-            Please note: this version saves ratings in the visitor's
-            browser only. It does not send reviews to the shop.
+        <p style="font-size:12px;color:#64748b;margin-top:12px;">
+            Ratings in this version are saved only in the visitor's
+            browser. They are not sent to the shop.
         </p>
     </div>
 </section>
@@ -624,20 +560,19 @@ const ratingLabel = document.getElementById("rating-label");
 const ratingMessage = document.getElementById("rating-message");
 const ratingForm = document.getElementById("rating-form");
 
-function showStars(rating) {
+function updateStars(rating) {
     stars.forEach(function(star) {
-        const value = Number(star.dataset.rating);
-
-        star.classList.toggle("selected", value <= rating);
+        star.classList.toggle(
+            "selected",
+            Number(star.dataset.rating) <= rating
+        );
     });
 }
 
 stars.forEach(function(star) {
     star.addEventListener("click", function() {
         selectedRating = Number(star.dataset.rating);
-
-        showStars(selectedRating);
-
+        updateStars(selectedRating);
         ratingLabel.textContent =
             selectedRating + " out of 5 stars selected.";
     });
@@ -648,40 +583,39 @@ ratingForm.addEventListener("submit", function(event) {
 
     if (selectedRating === 0) {
         ratingMessage.textContent =
-            "Please select a star rating before submitting.";
+            "Please select a star rating first.";
         return;
     }
 
     const review = {
         rating: selectedRating,
-        name: document.getElementById("customer-name").value.trim(),
         comment: document.getElementById("customer-review").value.trim(),
         date: new Date().toISOString()
     };
 
     try {
-        const previousReviews = JSON.parse(
+        const saved = JSON.parse(
             localStorage.getItem("ammanTradersReviews") || "[]"
         );
 
-        previousReviews.push(review);
+        saved.push(review);
 
         localStorage.setItem(
             "ammanTradersReviews",
-            JSON.stringify(previousReviews)
+            JSON.stringify(saved)
         );
 
         ratingMessage.textContent =
-            "Thank you for rating Amman Traders! Your rating is saved in this browser.";
+            "Thank you for rating Amman Traders!";
 
         ratingForm.reset();
         selectedRating = 0;
-        showStars(0);
-        ratingLabel.textContent = "Select your rating.";
+        updateStars(0);
+        ratingLabel.textContent = "Choose 1 to 5 stars.";
 
     } catch (error) {
         ratingMessage.textContent =
-            "Your browser could not save the rating. Please try again.";
+            "Unable to save the rating in this browser.";
     }
 });
 </script>
